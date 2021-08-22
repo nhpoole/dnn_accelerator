@@ -1,0 +1,100 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 20.13-s083_1 (64bit) 01/19/2021 16:51 (Linux 2.6.32-431.11.2.el6.x86_64)
+*	
+*
+* 	Date & Time:	2021-Mar-11 21:54:48 (2021-Mar-12 05:54:48 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: conv
+*
+*	Liberty Libraries used: 
+*	        analysis_default: /home/users/nhpoole/ee272a/dnn-accelerator-pnr-10n/ConvVerilog/build/19-cadence-innovus-signoff/checkpoints/design.checkpoint/save.enc.dat/libs/mmmc/stdcells.lib
+*	        analysis_default: /home/users/nhpoole/ee272a/dnn-accelerator-pnr-10n/ConvVerilog/build/19-cadence-innovus-signoff/checkpoints/design.checkpoint/save.enc.dat/libs/mmmc/sky130_sram_4kbyte_1rw1r_32x1024_8_TT_1p8V_25C.lib
+*	        analysis_default: /home/users/nhpoole/ee272a/dnn-accelerator-pnr-10n/ConvVerilog/build/19-cadence-innovus-signoff/checkpoints/design.checkpoint/save.enc.dat/libs/mmmc/sky130_sram_1kbyte_1rw1r_32x256_8_TT_1p8V_25C.lib
+*	        analysis_default: /home/users/nhpoole/ee272a/dnn-accelerator-pnr-10n/ConvVerilog/build/19-cadence-innovus-signoff/checkpoints/design.checkpoint/save.enc.dat/libs/mmmc/sky130_sram_2kbyte_1rw1r_32x512_8_TT_1p8V_25C.lib
+*
+*	Power Domain used: 
+*              Rail:        VDD      Voltage:        1.8 
+*
+*       Power View : analysis_default
+*
+*       User-Defined Activity : N.A.
+*
+*       Activity File: N.A.
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: N.A.
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile power_report.rpt -sort total
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:       81.80738356 	   87.7839%
+Total Switching Power:      11.16758259 	   11.9834%
+Total Leakage Power:         0.21681091 	    0.2327%
+Total Power:                93.19177609 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         5.118      0.9681    2.06e-05       6.086       6.531 
+Macro                              71.91      0.1223      0.2167       72.24       77.52 
+IO                                     0           0           0           0           0 
+Combinational                      2.978       6.715    4.24e-05       9.693        10.4 
+Clock (Combinational)             0.4409       2.369   6.925e-07        2.81       3.016 
+Clock (Sequential)                 1.365       0.993   3.217e-06       2.358        2.53 
+-----------------------------------------------------------------------------------------
+Total                              81.81       11.17      0.2168       93.19         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                       1.8      81.81       11.17      0.2168       93.19         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+ideal_clock                        1.806       3.362   3.909e-06       5.168       5.546 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)       1.806       3.362   3.909e-06       5.168       5.546 
+-----------------------------------------------------------------------------------------
+Clock: ideal_clock
+Clock Period: 0.010000 usec 
+Clock Toggle Rate:   200.0000 Mhz 
+Clock Static Probability:  0.5000
+
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power: ifmap_double_buffer_inst/ram/genblk1_width_macro_0__depth_macro_1__sram (sky130_sram_4kbyte_1rw1r_32x1024_8):            10.35 
+*                Highest Leakage Power: weight_double_buffer_inst/ram/genblk1_width_macro_0__depth_macro_0__sram (sky130_sram_4kbyte_1rw1r_32x1024_8):          0.03515 
+*          Total Cap:      3.33412e-10 F
+*          Total instances in design: 20566
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+
